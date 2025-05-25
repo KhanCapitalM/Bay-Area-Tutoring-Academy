@@ -8,38 +8,34 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #e0f7ff; /* Sky blue main background */
+      background-color: #e0f7ff;
     }
 
     .site-header {
-      background-color: #fff8d6; /* Light yellow header */
-      padding: 20px 40px;
-      font-size: 28px;
-      font-weight: 700;
-      color: #1f2a40;
+      background-color: #fff;
+      padding: 12px 20px;
       display: flex;
       align-items: center;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
 
     .site-header img {
-      width: 55px;
-      height: 55px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
-      margin-right: 15px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
 
     .wrapper {
       display: flex;
       flex-direction: row;
-      min-height: calc(100vh - 80px);
+      min-height: calc(100vh - 64px); /* subtract header height */
     }
 
     .sidebar {
-      background-color: #fff8d6; /* Light yellow sidebar */
+      background-color: #2c3e50;
       width: 180px;
-      padding: 30px 15px;
+      padding: 40px 10px 40px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -49,7 +45,7 @@
       margin-top: 0;
       font-size: 22px;
       font-weight: 700;
-      color: #2c3e50;
+      color: #ffffff;
       line-height: 2.5;
       text-align: center;
     }
@@ -61,10 +57,10 @@
     }
 
     .logo {
-      width: 320px;
+      width: 360px;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
       margin-bottom: 30px;
     }
 
@@ -102,20 +98,19 @@
 </head>
 <body>
 
-  <!-- Header with mini logo -->
+  <!-- Header with logo only -->
   <div class="site-header">
     <img src="logo.png" alt="Mini Logo" />
-    Bay Area Tutoring Academy
   </div>
 
   <div class="wrapper">
-    <!-- Sidebar with Subjects -->
+    <!-- Sidebar -->
     <div class="sidebar">
       <div class="subjects">
         <div>Math</div>
         <div>Science</div>
         <div>English</div>
-        <div>Test Prep</div>
+        <div>Test prep</div>
       </div>
     </div>
 
