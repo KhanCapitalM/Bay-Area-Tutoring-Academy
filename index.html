@@ -8,48 +8,56 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #dff6fd; /* Sky blue main background */
+      background-color: #dff6fd;
     }
 
-    /* Header with logo and name */
+    /* Header with title and logo */
     .site-header {
       background-color: #ffffff;
-      padding: 20px 30px;
+      padding: 18px 30px;
       display: flex;
       align-items: center;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      z-index: 10;
     }
 
     .site-header img {
-      width: 55px;
-      height: 55px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       margin-right: 15px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
 
     .site-header h1 {
-      margin: 0;
       font-size: 24px;
-      font-weight: 700;
       color: #1f2a40;
+      margin: 0;
+      font-weight: 700;
     }
 
     .wrapper {
       display: flex;
       flex-direction: row;
-      min-height: calc(100vh - 80px); /* subtract header height */
+      min-height: calc(100vh - 80px);
     }
 
     .sidebar {
-      background-color: #2c3e50; /* restored cool blue sidebar */
+      background-color: #2c3e50;
       width: 200px;
-      padding: 40px 10px 40px 20px;
+      padding-top: 40px;
       display: flex;
       flex-direction: column;
       align-items: center;
       color: #fff;
+    }
+
+    .sidebar img {
+      width: 90px;
+      height: 90px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+      background-color: #fff;
+      padding: 10px;
     }
 
     .subjects {
@@ -57,7 +65,6 @@
       font-weight: 700;
       line-height: 2.5;
       text-align: center;
-      margin-top: 20px;
     }
 
     .main-content {
@@ -108,7 +115,7 @@
 </head>
 <body>
 
-  <!-- Header with mini logo and title -->
+  <!-- Top Header -->
   <div class="site-header">
     <img src="logo.png" alt="Mini Logo" />
     <h1>Bay Area Tutoring Academy</h1>
@@ -117,6 +124,7 @@
   <div class="wrapper">
     <!-- Sidebar -->
     <div class="sidebar">
+      <img src="logo.png" alt="Sidebar Logo" />
       <div class="subjects">
         <div>Math</div>
         <div>Science</div>
@@ -127,7 +135,7 @@
 
     <!-- Main Content -->
     <div class="main-content">
-      <img src="logo.png" alt="Bay Area Tutoring Academy Logo" class="logo" />
+      <img src="logo.png" alt="Main Logo" class="logo" />
       <p>Our site is getting an upgrade. Launching again soon!</p>
 
       <div class="contact">
