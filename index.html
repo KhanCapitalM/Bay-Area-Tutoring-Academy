@@ -8,19 +8,26 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #fdfcfb, #e2f0f6);
+      background-color: #e0f7ff; /* Sky blue main background */
     }
 
     .site-header {
-      background-color: #ffffffee;
-      padding: 25px 40px;
+      background-color: #fff8d6; /* Light yellow header */
+      padding: 20px 40px;
       font-size: 28px;
       font-weight: 700;
       color: #1f2a40;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .site-header img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      margin-right: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
 
     .wrapper {
@@ -29,56 +36,36 @@
       min-height: calc(100vh - 80px);
     }
 
-    /* Left sidebar with color and padding */
     .sidebar {
-      background-color: #2c3e50;
-      padding: 30px 20px;
-      width: 120px;
+      background-color: #fff8d6; /* Light yellow sidebar */
+      width: 180px;
+      padding: 30px 15px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: white;
-    }
-
-    .sidebar .mini-logo {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
 
     .subjects {
-      margin-top: 20px;
-      font-size: 20px;
-      line-height: 2;
+      margin-top: 0;
+      font-size: 22px;
+      font-weight: 700;
+      color: #2c3e50;
+      line-height: 2.5;
       text-align: center;
-    }
-
-    .subjects div {
-      margin-bottom: 10px;
-      font-weight: 600;
     }
 
     .main-content {
       flex: 1;
-      padding: 60px 20px;
+      padding: 60px 30px;
       text-align: center;
     }
 
     .logo {
-      width: 300px;
+      width: 320px;
       height: auto;
       border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
       margin-bottom: 30px;
-    }
-
-    h1 {
-      font-size: 42px;
-      font-weight: 800;
-      color: #1f2a40;
-      margin-bottom: 12px;
     }
 
     p {
@@ -89,10 +76,10 @@
 
     .contact {
       font-size: 18px;
-      background-color: #f0f6fa;
+      background-color: #ffffff;
       padding: 20px 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       display: inline-block;
       text-align: left;
     }
@@ -115,27 +102,26 @@
 </head>
 <body>
 
-  <!-- Top Header -->
+  <!-- Header with mini logo -->
   <div class="site-header">
+    <img src="logo.png" alt="Mini Logo" />
     Bay Area Tutoring Academy
   </div>
 
   <div class="wrapper">
-    <!-- Left Sidebar -->
+    <!-- Sidebar with Subjects -->
     <div class="sidebar">
-      <img src="logo.png" alt="Mini Logo" class="mini-logo" />
       <div class="subjects">
         <div>Math</div>
         <div>Science</div>
         <div>English</div>
-        <div>Test prep</div>
+        <div>Test Prep</div>
       </div>
     </div>
 
     <!-- Main Content -->
     <div class="main-content">
       <img src="logo.png" alt="Bay Area Tutoring Academy Logo" class="logo" />
-      <h1>Bay Area Tutoring Academy</h1>
       <p>Our site is getting an upgrade. Launching again soon!</p>
 
       <div class="contact">
