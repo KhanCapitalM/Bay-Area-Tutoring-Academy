@@ -8,28 +8,42 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #dff6fd; /* sky blue main background */
+      background-color: #dff6fd; /* Sky blue main background */
     }
 
-    /* Top header stays white */
+    /* Header with logo and name */
     .site-header {
       background-color: #ffffff;
-      padding: 12px 20px;
+      padding: 20px 30px;
       display: flex;
       align-items: center;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       z-index: 10;
     }
 
+    .site-header img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      margin-right: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .site-header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 700;
+      color: #1f2a40;
+    }
+
     .wrapper {
       display: flex;
       flex-direction: row;
-      min-height: calc(100vh - 64px); /* subtract header height */
+      min-height: calc(100vh - 80px); /* subtract header height */
     }
 
-    /* Sidebar: cool blue/teal */
     .sidebar {
-      background-color: #2c3e50;
+      background-color: #2c3e50; /* restored cool blue sidebar */
       width: 200px;
       padding: 40px 10px 40px 20px;
       display: flex;
@@ -38,28 +52,12 @@
       color: #fff;
     }
 
-    /* Mini logo container in L-shape */
-    .logo-box {
-      background-color: #fff;
-      padding: 10px;
-      border-radius: 0 12px 12px 0;
-      margin-bottom: 30px;
-      box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
-    }
-
-    .logo-box img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: block;
-    }
-
     .subjects {
       font-size: 22px;
       font-weight: 700;
       line-height: 2.5;
       text-align: center;
-      margin-top: 0;
+      margin-top: 20px;
     }
 
     .main-content {
@@ -110,19 +108,15 @@
 </head>
 <body>
 
-  <!-- White Header Bar -->
+  <!-- Header with mini logo and title -->
   <div class="site-header">
-    <h1 style="margin: 0; font-size: 24px;">&nbsp;</h1> <!-- placeholder for spacing -->
+    <img src="logo.png" alt="Mini Logo" />
+    <h1>Bay Area Tutoring Academy</h1>
   </div>
 
   <div class="wrapper">
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- L-shape corner logo -->
-      <div class="logo-box">
-        <img src="logo.png" alt="Mini Logo" />
-      </div>
-      <!-- Subject List -->
       <div class="subjects">
         <div>Math</div>
         <div>Science</div>
