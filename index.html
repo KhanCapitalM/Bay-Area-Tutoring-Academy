@@ -8,8 +8,8 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -19,37 +19,51 @@
     }
 
     .logo {
-      width: 150px;
+      width: 160px;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
     }
 
     h1 {
-      font-size: 28px;
-      color: #333;
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px #ccc;
     }
 
     p {
-      font-size: 18px;
-      color: #666;
-      margin: 10px 0;
+      font-size: 20px;
+      color: #7f8c8d;
+      margin-bottom: 20px;
     }
 
     .contact {
-      margin-top: 30px;
-      font-size: 16px;
-      color: #444;
+      font-size: 18px;
+      color: #34495e;
+      background-color: #ecf0f1;
+      padding: 15px 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact p {
+      margin: 10px 0;
     }
 
     a {
-      color: #444;
+      color: #2980b9;
+      font-weight: bold;
       text-decoration: none;
+    }
+
+    a:hover {
+      color: #1abc9c;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo image -->
   <img src="logo.png" alt="Bay Area Tutoring Academy Logo" class="logo" />
 
   <h1>Bay Area Tutoring Academy</h1>
@@ -60,6 +74,5 @@
     <p>📞 Phone: 310-985-2118</p>
   </div>
 
-  <!-- Trigger GitHub Pages rebuild -->
 </body>
 </html>
